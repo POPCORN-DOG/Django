@@ -63,17 +63,15 @@ Django-project
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
 
-  </head>
-  <body>
-    <pre><code id="python_code">
-    def func(A):
-    result = 0
-    n = len(A)
-    while n > 1:
-        n = n/2
-        result = result + min(A[1,...,n])
-    return result
-    </code></pre>
- 
+<pre><code id="python_code">
+def func(A):
+result = 0
+n = len(A)
+while n > 1:
+    n = n/2
+    result = result + min(A[1,...,n])
+return result
+</code></pre>
+
 
 
