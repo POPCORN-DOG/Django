@@ -58,10 +58,12 @@ Django-project
 
 ## 2) 모델 작성하기
 - 모델이란 DB에 저장될 테이블을 정의하는 클래스이다.
-
+- 우리가 작성하고자 하는 모델의 설계는 다음과 같다.
+- 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-
+<script language="Python">from django.db import models </script>
+    
 
 
 
