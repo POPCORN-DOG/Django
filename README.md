@@ -39,4 +39,6 @@ Django-project
 - django-admin startproject MBIT . (현재경로)
 - manage.py파일 생성
 
-# 5. 
+# 5. django 프로젝트 실행
+- 프로젝트가 정상적으로 잘 생성되었는지 확인하기 위해 다음 명령어를 통해 프로젝트를 실행
+- python manage.py runserver 0:80
