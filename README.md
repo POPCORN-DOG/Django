@@ -20,7 +20,7 @@ Django-project
 
 # 3. Django 프로젝트 basic
 ### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
-1. venv 모듈을 통해 가상 환경 생성
+### 1. venv 모듈을 통해 가상 환경 생성
 - [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
 - [root@goorm:/workspace/MBIT#] python -m venv venv
 
