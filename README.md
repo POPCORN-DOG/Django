@@ -62,7 +62,7 @@ Django-project
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-<pre>
+<pre id="code_1554774712620" class="python" data-ke-type="codeblock"
     <code>
 from django.db import models
 
