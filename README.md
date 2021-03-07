@@ -20,10 +20,8 @@ Django-project
 
 # 3. Django 프로젝트 basic
 ### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
-## 1) 서버환경 구축과 장고 프로젝트 생성하기 
+
+## ```diff !1) 서버환경 구축과 장고 프로젝트 생성하기 ```
 ### 1. venv 모듈을 통해 가상 환경 생성
 - [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
 - [root@goorm:/workspace/MBIT#] python -m venv venv
