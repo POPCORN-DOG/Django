@@ -22,7 +22,7 @@ Django-project
 ### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
 
 ```diff 
-!1) 서버환경 구축과 장고 프로젝트 생성하기 
+## - 1) 서버환경 구축과 장고 프로젝트 생성하기 
 ```
 ### 1. venv 모듈을 통해 가상 환경 생성
 - [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
