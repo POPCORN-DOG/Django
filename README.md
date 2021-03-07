@@ -18,10 +18,10 @@ Django-project
 2. 집에 서버와 환경을 구축하는 것은 비용(시간, 금전, 기회 비용)이 상대적으로 크다.
 3. 배포를 명령어 한 번으로 진행할 수 있다. 또 구름에서도 서비스를 런칭할 수 있다.
 
-# 3. Django 프로젝트 basic
+### 3. Django 프로젝트 basic
 ### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
 
-## 1) 서버환경 구축과 장고 프로젝트 생성하기 
+# 1) 서버환경 구축과 장고 프로젝트 생성하기 
 
 ### 1. venv 모듈을 통해 가상 환경 생성
 - [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
@@ -57,28 +57,28 @@ Django-project
 - [프로젝트 명]/settings.py에서 INSTALLED_APPS 리스트에 해당 앱 이름을 추가한다.
 - **장고에서는 리스트, 튜플, 딕셔너리 등에서 마지막 요소에도 <code>,</code>를 붙이는 것을 권장한다.**
 
-## 2) 모델 작성하기 
+# 2) 모델 작성하기 
 - 참고: http://pythonstudy.xyz/python/article/308-Django-%EB%AA%A8%EB%8D%B8-Model
 - 모델이란 DB에 저장될 테이블을 정의하는 클래스이다.
 - 우리가 작성하고자 하는 모델의 설계는 다음과 같다.
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-### 1. Developer: 개발자 유형
+### Developer: 개발자 유형
 ```python
 class Developer(models.Model):
     name = models.CharField(max_Length=50)
     count = models.IntegerField(default=0)
 ```
 
-### 2. Question: 문항
+### Question: 문항
 ```python
 class Question(models.Model):
     number = models.IntegerField(unique=True)
     content = models.CharField(max_length=100)
 ```
 
-### 3. Choice: 선택지
+### Choice: 선택지
 ```python
 class Choice(models.Model):
     content = models.CharField(max_length=100)
@@ -86,11 +86,14 @@ class Choice(models.Model):
     developer = models.ForeignKey(to='main.developer', on_delete=models.CASCADE, null=True)
 ```
 
-## 2. migration
+### 2. migration
 - 모델의 내용을 DB에 옮기는 것.
 - python manage.py makemigrations 명령어를 통해 DB의 설계도를 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110244793-ca939b00-7fa3-11eb-93e1-5892aac85eef.png)
-- 사진처럼 나오면 main/migrations/ 경로에 001_initial.py라는 설계도 파일이 만들어진다.
+- 사진처럼 나오면 main/migrations/ 경로에 001_initial.py라는 `설계도 파일`이 만들어진다.
 
+### 3. migrate
+- 해당 설계도를 통해 DB에 테이블을 만드는 명령어 migrate를 사용한다.
+- python manage.py migrate
 
 
