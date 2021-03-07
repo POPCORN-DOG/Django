@@ -56,17 +56,12 @@ Django-project
 - [프로젝트 명]/settings.py에서 INSTALLED_APPS 리스트에 해당 앱 이름을 추가한다.
 - **장고에서는 리스트, 튜플, 딕셔너리 등에서 마지막 요소에도 <code>,</code>를 붙이는 것을 권장한다.**
 
-## 2) 모델 작성하기
+## 2) 모델 작성하기 
+- 참고: http://pythonstudy.xyz/python/article/308-Django-%EB%AA%A8%EB%8D%B8-Model
 - 모델이란 DB에 저장될 테이블을 정의하는 클래스이다.
 - 우리가 작성하고자 하는 모델의 설계는 다음과 같다.
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
-
-```python
-from django.db import models
-
-# Create your models here.
-```
 
 ### 1. Developer: 개발자 유형
 ```python
