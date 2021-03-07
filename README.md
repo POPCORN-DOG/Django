@@ -62,8 +62,40 @@ Django-project
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-<script language="Python">from django.db import models </script>
-    
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeMirror RunMode Highlighting Example</title>
+    <link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+  </head>
+  <body>
+    <pre><code id="python_code">def func(A):
+    result = 0
+    n = len(A)
+    while n > 1:
+        n = n/2
+        result = result + min(A[1,...,n])
+    return result</code></pre>
+    <script type="text/javascript">
+        window.onload = function(){
+            var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add( 'cm-s-default' );
+            var code = codeElement.innerText;
+
+            codeElement.innerHTML = "";
+
+            CodeMirror.runMode(
+              code,
+              'python',
+              codeElement
+            );
+        };
+    </script>
+  </body>
+</html>
 
 
 
