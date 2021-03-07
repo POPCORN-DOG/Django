@@ -62,8 +62,7 @@ Django-project
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-<pre id="code_1554774712620" class="python" data-ke-type="codeblock">
-    <code>
+```ruby
 from django.db import models
 
 # Create your models here.
@@ -83,8 +82,7 @@ class Choice(models.Model):
     content = models.CharField(max_length=100)
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
     developer = models.ForeignKey(to='main.developer', on_delete=models.CASCADE, null=True)
-    </code>
-</pre>
+```
 
 
 
