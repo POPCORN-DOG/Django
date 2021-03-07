@@ -66,18 +66,24 @@ Django-project
 from django.db import models
 
 # Create your models here.
+```
 
-# 1. Developer: 개발자 유형
+### 1. Developer: 개발자 유형
+```python
 class Developer(models.Model):
     name = models.CharField(max_Length=50)
     count = models.IntegerField(default=0)
-    
-# 2. Question: 문항
+```
+
+### 2. Question: 문항
+```python
 class Question(models.Model):
     content = models.CharField(max_length=100)
     number = models.IntegerField(unique=True)
+```
 
-# 3. Choice: 선택지
+### 3. Choice: 선택지
+```python
 class Choice(models.Model):
     content = models.CharField(max_length=100)
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
