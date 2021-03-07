@@ -18,8 +18,8 @@ Django-project
 2. 집에 서버와 환경을 구축하는 것은 비용(시간, 금전, 기회 비용)이 상대적으로 크다.
 3. 배포를 명령어 한 번으로 진행할 수 있다. 또 구름에서도 서비스를 런칭할 수 있다.
 
-### 3. Django 프로젝트 basic
-### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
+# 3. 실전! Django 프로젝트 Basic
+https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
 
 # 1) 서버환경 구축과 장고 프로젝트 생성하기 
 
