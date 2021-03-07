@@ -62,15 +62,26 @@ Django-project
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-
 <pre><code id="python_code">
-def func(A):
-result = 0
-n = len(A)
-while n > 1:
-    n = n/2
-    result = result + min(A[1,...,n])
-return result
+from django.db import models
+
+# Create your models here.
+
+# 1. Developer: 개발자 유형
+class Developer(models.Model):
+    name = models.CharField(max_Length=50)
+    count = models.IntegerField(default=0)
+    
+# 2. Question: 문항
+class Question(models.Model):
+    content = models.CharField(max_length=100)
+    number = models.IntegerField(unique=True)
+
+# 3. Choice: 선택지
+class Choice(models.Model):
+    content = models.CharField(max_length=100)
+    question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
+    developer = models.ForeignKey(to='main.developer', on_delete=models.CASCADE, null=True)
 </code></pre>
 
 
