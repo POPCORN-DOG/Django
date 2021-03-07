@@ -53,3 +53,14 @@ Django-project
 - 해당 앱 폴더가 생성된다. **앱을 생성한 뒤에는 반드시 해당 앱을 프로젝트에 등록해 주어야한다.**
 - [프로젝트 명]/settings.py에서 INSTALLED_APPS 리스트에 해당 앱 이름을 추가한다.
 - **장고에서는 리스트, 튜플, 딕셔너리 등에서 마지막 요소에도 <code>,</code>를 붙이는 것을 권장한다.
+'''
+- INSTALLED_APPS = [
+		'앱이름',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+'''
