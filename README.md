@@ -96,4 +96,13 @@ class Choice(models.Model):
 - 해당 설계도를 통해 DB에 테이블을 만드는 명령어 migrate를 사용한다.
 - python manage.py migrate
 
+# 3) 관리자 페이지
+- 관리자 페이지는 해당 프로젝트를 개발자들이 쉽게 관리할 수 있도록 GUI를 활용한 페이지
+- 원래는 개발자가 직접 만들어야 하지만 장고는 프로젝트를 생성하면 기복적으로 관리자 페이지 앱을 만들어 준다.
+- 그것이 바로 `admin`앱이다.
 
+### 1. 관리자 계정만들기
+- python manage.py createsuperuser 관리자 계정 생성
+- `프로젝트URL/admin/` 으로 접속
+
+### 2. 관리자 페이지에서 모델 요소 추가하기
