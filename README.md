@@ -20,6 +20,8 @@ Django-project
 
 # 3. Django 프로젝트 basic
 ### https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656
+
+# 1) 서버환경 구축과 장고 프로젝트 
 ### 1. venv 모듈을 통해 가상 환경 생성
 - [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
 - [root@goorm:/workspace/MBIT#] python -m venv venv
@@ -52,4 +54,4 @@ Django-project
 - python manage.py startapp [앱이름]
 - 해당 앱 폴더가 생성된다. **앱을 생성한 뒤에는 반드시 해당 앱을 프로젝트에 등록해 주어야한다.**
 - [프로젝트 명]/settings.py에서 INSTALLED_APPS 리스트에 해당 앱 이름을 추가한다.
-- **장고에서는 리스트, 튜플, 딕셔너리 등에서 마지막 요소에도 <code>,</code>를 붙이는 것을 권장한다.
+- **장고에서는 리스트, 튜플, 딕셔너리 등에서 마지막 요소에도 <code>,</code>를 붙이는 것을 권장한다.**
