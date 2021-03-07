@@ -41,7 +41,7 @@ Django-project
 - django-admin startproject MBIT . (현재경로)
 - manage.py파일 생성
 
-# 5. django 프로젝트 실행
+### 5. django 프로젝트 실행
 - 프로젝트가 정상적으로 잘 생성되었는지 확인하기 위해 다음 명령어를 통해 프로젝트를 실행
 - python manage.py runserver 0:80
 - 프로젝트 탭 > 실행 URL과 포트에 등록된 URL로 접속하면 오류가 뜨는데, 이는 django 프로젝트가 잘 실행되고 있지만
@@ -49,7 +49,7 @@ Django-project
 - [프로젝트 명]/settings.py에서 ALLOWED_HOSTS = ['\*'] 이렇게 수정해준다.
 - 다시 접속하면 로켓모양 성공!
 
-# 6. 앱 생성
+### 6. 앱 생성
 - 이제 해당 프로젝트에서 내가 원하는 기능을 수행하는 앱을 만들어야 한다. 
 - python manage.py startapp [앱이름]
 - 해당 앱 폴더가 생성된다. **앱을 생성한 뒤에는 반드시 해당 앱을 프로젝트에 등록해 주어야한다.**
