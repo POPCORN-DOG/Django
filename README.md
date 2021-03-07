@@ -62,19 +62,18 @@ Django-project
 - 모델 클래스는 [해당 앱 폴더]/models.py에 작성한다.
 ![image](https://user-images.githubusercontent.com/79825411/110242154-1b04fb80-7f98-11eb-8974-d4a0c55bb737.png)
 
-    <title>CodeMirror RunMode Highlighting Example</title>
-    <link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
-    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
-    <script src="//codemirror.net/mode/python/python.js"></script>
+
   </head>
   <body>
-    <pre><code id="python_code">def func(A):
+    <pre><code id="python_code">
+    def func(A):
     result = 0
     n = len(A)
     while n > 1:
         n = n/2
         result = result + min(A[1,...,n])
-    return result</code></pre>
+    return result
+    </code></pre>
  
 
 
