@@ -17,3 +17,25 @@ Django-project
 1. OS Version, Python Version, Django Version별 에러를 잡는데 시간이 많이 소요된다. 또한 '개발은 배포 환경과 동일하게!'라는 말을 잊지말자. 우리의 리소스를 아껴줄 것이다.
 2. 집에 서버와 환경을 구축하는 것은 비용(시간, 금전, 기회 비용)이 상대적으로 크다.
 3. 배포를 명령어 한 번으로 진행할 수 있다. 또 구름에서도 서비스를 런칭할 수 있다.
+
+# 3. Django 프로젝트 basic
+### 1. venv 모듈을 통해 가상 환경 생성
+- [root@goorm:/workspace/MBIT#] python -m venv [가상환경이름]
+- [root@goorm:/workspace/MBIT#] python -m venv venv
+
+### 2. 가상환경 실행
+- source venv/bin/activate
+- 가상환경이 잘 실행되고 있는지 확인하려면 pip list 명령어로
+- python 모듈의 리스트를 보자 글로벌 환경일 때와 가상 환경일 떄의 결과가 다르다.
+
+### 3. django 패키지 설치
+- pip install django
+- successfully installed 메시지가 뜨면 성공적
+- pip list 명령어로 확인해보자.
+
+### django 프로젝트 생성
+- django-admin startproject [프로젝트 명] [경로]
+- django-admin startproject MBIT . (현재경로)
+- manage.py파일 생성
+
+# 4. 
