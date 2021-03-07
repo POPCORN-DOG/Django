@@ -1,35 +1,6 @@
 `# Django`
 Django-project
-<div class="text-white bg-blue mb-2">
-  .text-white on .bg-blue
-</div>
-<div class="bg-blue-light mb-2">
-  .text-gray-dark on .bg-blue-light
-</div>
-<div class="text-white bg-red mb-2">
-  .text-white on .bg-red
-</div>
-<div class="text-red bg-red-light mb-2">
-  .text-red on .bg-red-light
-</div>
-<div class="bg-green-light mb-2">
-  .text-gray-dark on .bg-green-light
-</div>
-<div class="bg-yellow mb-2">
-  .text-gray-dark on .bg-yellow
-</div>
-<div class="bg-yellow-light mb-2">
-  .text-gray-dark on .bg-yellow-light
-</div>
-<div class="text-white bg-purple mb-2">
-  .text-white on .bg-purple
-</div>
-<div class="text-white bg-gray-dark mb-2">
-  .text-white on .bg-gray-dark
-</div>
-<div class="bg-gray">
-  .text-gray-dark on .bg-gray
-</div>
+
 # 1. 클라우드 서비스란?
 서비스를 운영하기 위해서는 서버가 필요하다. 그러나 서버를 직접 사기에는 너무 고가이고, 또 배송이 온다고 해서 끝이 아니라 설치를 하는 것도 매우 큰 리소스가 드는 작업! 그래서 이 서버를 빌려서 사용한다. 빌리는 것을 클라우드 서비스라 하고, 이 서비스는 크게 3가지로 나눌 수 있다.
 
