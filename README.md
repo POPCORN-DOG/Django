@@ -74,8 +74,8 @@ class Developer(models.Model):
 ### 2. Question: 문항
 ```python
 class Question(models.Model):
-    content = models.CharField(max_length=100)
     number = models.IntegerField(unique=True)
+    content = models.CharField(max_length=100)
 ```
 
 ### 3. Choice: 선택지
@@ -85,6 +85,12 @@ class Choice(models.Model):
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
     developer = models.ForeignKey(to='main.developer', on_delete=models.CASCADE, null=True)
 ```
+
+## 2. migration
+- 모델의 내용을 DB에 옮기는 것.
+- python manage.py makemigrations 명령어를 통해 DB의 설계도를 작성한다.
+![image](https://user-images.githubusercontent.com/79825411/110244793-ca939b00-7fa3-11eb-93e1-5892aac85eef.png)
+- 사진처럼 나오면 main/migrations/ 경로에 001_initial.py라는 설계도 파일이 만들어진다.
 
 
 
