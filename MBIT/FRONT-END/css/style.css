@@ -1,0 +1,301 @@
+/*=====================================================
+1. 폰트 가져오기
+=====================================================*/
+
+/* 눈누(https://noonnu.cc): 상업용 무료한글폰트 사이트/*/
+/* Gmarket Sans B */
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 넥슨 Lv.1 고딕 Regular */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*=====================================================
+2. 영역 조정 및 배경 색, 글자색 등 전체적인 설정값 지정
+=====================================================*/
+
+/* f12에서 전체 영역을 차지하기 위한 크기 조정 */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* body 전체적인 부분 조정해준다. */
+/* color 설정 방법:
+(adobe color: https://color.adobe.com/ko/create/color-wheel) 에서
+trend tap 등 컬러를 선택해서 뽑는다.
+*/
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FAF1BE; /* 배경화면 컬러 */
+    color: #000;    /* 글자 컬러 */
+    font-family: "NEXON Lv1 Gothic OTF"; /* 전체 폰트설정 */
+}
+
+/* 모든 컨텐츠를 감싸는 section*/
+#main_contents {
+    width: 100%; 
+    height: 100%;
+
+    /* flex-box layout 수평방향으로 정렬할 수 있는 방법을 제공해준다. */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* 위 여백 */
+}
+
+/* 각각 타이틀 인트로 등등 가로로 쌓지 않고 세로로 쌓게 만들자 */
+#main_contents. wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column; /* 어느 방향으로 쌓을 것인가. */
+    max-width: 500px; /* 최대 넓이를 설정해서 내부 컨텐츠가 너무 커지는 것을 방지한다. */
+}
+
+
+/*=====================================================
+3. title 설정하기
+=====================================================*/
+
+/* title 전체 설정 */ 
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* main title 설정 */
+.main_title {
+    font-family: "GmarketSansBold";
+    font-size: 50px;
+    padding-bottom: 15px; /* 밑에 띄어쓰기 */
+}
+
+/* sub title 설정 */
+.sub_title {
+    font-size: 20px;
+    font-weiht: bold; /* 굵은 글자 */
+    color: #7F47DD; /* 글자 색 */
+}
+
+
+/*=====================================================
+4. intro 설정하기
+=====================================================*/
+
+/* 글자가 올라가는 intro 부분 애니메이션 주기 */
+/* intro 전체 설정값 */
+.intro {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* 나의 개발자 유형은?! 부분만 적용할 설정값 */
+.intro h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+/* 개발자 유형 5개 설정값 */
+/* 크기 단위 
+px(픽셀): 크기
+em(이엠): 현재 블럭의 배수 단위
+ex) 현재 있는 글자의 폰트s 사이즈 1배 2배 3배...
+*/
+.type {
+    font-size: 25px;
+    line-height: 1.3em; /* 위 아래 간격 */
+    height: 1.3em; /* 컨텐츠의 높이 지정으로 겹침이 발생할 수 있게 만든다.*/
+    overflow: hidden; /* 넘치는 글자를 잘라낸다. */
+}
+
+.type_list {
+    animation: rotate 7s infinite;
+    /* 
+    f12에서 css 옵션을 보면 여러가지 수정이 가능하다.
+    animation-timing-function: 애니메이션 슬라이딩의 부드러움 조정;
+    animation-iteration-count: 얼마나 반복할거냐. 여기서는 infinite;
+    */
+}
+
+/* 상자이동 ratate 라는 애니메이션 */
+/* 주로 transform을 사용한다.
+scale(): 스케일을 키우거나 줄인다.
+translate(): 위치를 이동시킨다.
+translateY(): Y축의 위치만 이동시킨다. 
+*/
+@keyframes rotate {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(-40%);
+    }
+    75%{
+        transform: translateY(-60%);
+    }
+    100%{
+        transform: translateY(-80%);
+    }
+}
+
+/*=====================================================
+5. button 설정하기
+=====================================================*/
+ 
+.button {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* .start 이라고 해도 된다. */
+.button button {
+    /* 상자의 크기 가로 세로, 상자 간격*/
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+
+    /* 경계선, 구분선 */
+    border-style: none;
+    /* 모서리를 깎는다. */
+    border-radius: 10px;
+
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-size: 20px;
+    font-weight: bold;  /*글자 진하게*/
+
+    background-color: #fff;
+    color: #7F47DD;
+
+    /* 마우스 속성 cursor
+    pointer: 손가락모양 */
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+/* 마우스 올려놓을 때 변화 */
+.button button:hover {
+    text-decoration: underline;
+    background-color: #F25252;
+    transition: all 2s;
+    color: #fff;
+}
+
+
+/*=====================================================
+6. result_data 설정하기
+=====================================================*/
+.result_data {
+    /* 레이아웃 배치 전용 기능 */
+    display: flex;
+    justify-content: center;
+}
+
+.result_data .data_wrap {
+    width: 270px;
+    padding: 15px;
+
+    /* 위 아래 선 입력*/
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+
+    /* 라인(글간) 마다의 간격 */
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.result_data h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    /*시계방향으로 padding 간격 조절*/
+    padding: 10px 0 20px 0;
+}
+
+.result_data li {
+    font-size: 15px;
+    padding-bottom: 10px
+}
+
+
+/*=====================================================
+7. logo 설정하기
+=====================================================*/
+
+.logo {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.logo a {
+    font-family: "GmarketSansBold";
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.logo span {
+    display: inline-block;
+    margin: 0 -.05em;
+    animation: loading 1.2s infinite alternate;
+}
+.loading span:nth-child(1) {
+    color:red;
+}
+.loading span:nth-child(2) {
+    color:orange;
+    animation-delay: .2s;
+}
+.loading span:nth-child(3) {
+    color:yellow;
+    animation-delay: .4s;
+}
+.loading span:nth-child(4) {
+    color:green;
+    animation-delay: .6s;
+}
+.loading span:nth-child(5) {
+    color:blue;
+    animation-delay: .8s;
+}
+.loading span:nth-child(6) {
+    color:indigo;
+    animation-delay: 1s;
+}
+.loading span:nth-child(7) {
+    color:purple;
+    animation-delay: 1.2s;
+}
+
+@keyframes loading {
+    0% {
+        /*filter: blur(0);s*/
+        opacity: 1;
+    }
+
+    100% {
+        /*filter: blur(5px);*/
+        opacity: .2;
+    }
+}
+
+
+
+
