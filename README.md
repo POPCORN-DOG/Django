@@ -102,5 +102,5 @@
 #### C#
 : C#은 유연하면서도 강력한 프로그래밍 언어입니다. 다양한 종류의 애플리케이션을 만드는 데 사용될 수 있는데요. 이 기술은 개발 도구, 웹사이트, 컴파일러와 같은 다양한 프로젝트에 사용되고 있습니다. C#은 객체지향(object-oriented) 프로그래밍 언어를 만드는 데 도움이 됩니다.
 
-​
-
+<br><br><br>
+https://medium.com/quick-code/front-end-development-and-back-end-development-what-is-the-difference-d84809f427ce
