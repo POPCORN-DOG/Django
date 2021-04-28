@@ -1,5 +1,5 @@
 # MBIT: My Best IT personalities
-: 나의 개발 유형은?
+: 나의 개발 유형이 무엇인지 알아보는 테스트 페이지입니다.
 ----
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/79825411/116448026-9d70b400-a893-11eb-9954-e4350ee65f74.gif)
 
